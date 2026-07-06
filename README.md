@@ -2,6 +2,8 @@
 
 - 智能摘要大師 (使用APPLE AI 功能，智能化取得文字摘要) 
 
+https://github.com/user-attachments/assets/86fc033f-3f7e-44ee-8a88-3d21e5f340fc
+
 ```swift
 import SwiftUI
 import WWSummaryMaster

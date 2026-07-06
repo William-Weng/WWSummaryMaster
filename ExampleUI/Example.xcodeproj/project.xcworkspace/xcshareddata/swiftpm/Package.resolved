@@ -1,0 +1,15 @@
+{
+  "originHash" : "370f54568c8e292a364bdf0559adab00c56f25bfb28c3877b6112728eb664578",
+  "pins" : [
+    {
+      "identity" : "wwsummarymaster",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWSummaryMaster",
+      "state" : {
+        "revision" : "8b3267581d99f3a65515689cb905609d56496de1",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}

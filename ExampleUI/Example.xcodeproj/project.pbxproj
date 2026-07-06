@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		810F851D2FFBAAAF00D153DD /* WWSummaryMaster in Frameworks */ = {isa = PBXBuildFile; productRef = 810F851C2FFBAAAF00D153DD /* WWSummaryMaster */; };
+		8113E3022FFBAFAA00A9B21F /* WWSummaryMaster in Frameworks */ = {isa = PBXBuildFile; productRef = 8113E3012FFBAFAA00A9B21F /* WWSummaryMaster */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				810F851D2FFBAAAF00D153DD /* WWSummaryMaster in Frameworks */,
+				8113E3022FFBAFAA00A9B21F /* WWSummaryMaster in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +78,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				810F851C2FFBAAAF00D153DD /* WWSummaryMaster */,
+				8113E3012FFBAFAA00A9B21F /* WWSummaryMaster */,
 			);
 			productName = Example;
 			productReference = 8177C5772F91CB0F00ACEA3E /* Example.app */;
@@ -109,7 +109,7 @@
 			mainGroup = 8177C56E2F91CB0F00ACEA3E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				810F85182FFBAA2700D153DD /* XCLocalSwiftPackageReference "../../@WWSummaryMaster" */,
+				8113E3002FFBAFAA00A9B21F /* XCRemoteSwiftPackageReference "WWSummaryMaster" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8177C5782F91CB0F00ACEA3E /* Products */;
@@ -344,17 +344,21 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		810F85182FFBAA2700D153DD /* XCLocalSwiftPackageReference "../../@WWSummaryMaster" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../@WWSummaryMaster";
+/* Begin XCRemoteSwiftPackageReference section */
+		8113E3002FFBAFAA00A9B21F /* XCRemoteSwiftPackageReference "WWSummaryMaster" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/William-Weng/WWSummaryMaster";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		810F851C2FFBAAAF00D153DD /* WWSummaryMaster */ = {
+		8113E3012FFBAFAA00A9B21F /* WWSummaryMaster */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 810F85182FFBAA2700D153DD /* XCLocalSwiftPackageReference "../../@WWSummaryMaster" */;
+			package = 8113E3002FFBAFAA00A9B21F /* XCRemoteSwiftPackageReference "WWSummaryMaster" */;
 			productName = WWSummaryMaster;
 		};
 /* End XCSwiftPackageProductDependency section */
