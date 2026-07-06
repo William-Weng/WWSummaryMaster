@@ -1,8 +1,10 @@
-# WWSummaryMaster
+//
+//  ContentView.swift
+//  Example
+//
+//  Created by William.Weng on 2026/7/6.
+//
 
-- 智能摘要大師 (使用APPLE AI 功能，智能化取得文字摘要) 
-
-```swift
 import SwiftUI
 import WWSummaryMaster
 
@@ -52,4 +54,4 @@ struct ContentView: View {
         }
     }
 }
-```
+
