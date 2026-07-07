@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8113E3022FFBAFAA00A9B21F /* WWSummaryMaster in Frameworks */ = {isa = PBXBuildFile; productRef = 8113E3012FFBAFAA00A9B21F /* WWSummaryMaster */; };
+		8108BBED2FFC90AF0001B7D7 /* WWSummaryMaster in Frameworks */ = {isa = PBXBuildFile; productRef = 8108BBEC2FFC90AF0001B7D7 /* WWSummaryMaster */; };
+		8108BBF02FFC91D60001B7D7 /* WWSummaryMaster in Frameworks */ = {isa = PBXBuildFile; productRef = 8108BBEF2FFC91D60001B7D7 /* WWSummaryMaster */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8113E3022FFBAFAA00A9B21F /* WWSummaryMaster in Frameworks */,
+				8108BBED2FFC90AF0001B7D7 /* WWSummaryMaster in Frameworks */,
+				8108BBF02FFC91D60001B7D7 /* WWSummaryMaster in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +80,8 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				8113E3012FFBAFAA00A9B21F /* WWSummaryMaster */,
+				8108BBEC2FFC90AF0001B7D7 /* WWSummaryMaster */,
+				8108BBEF2FFC91D60001B7D7 /* WWSummaryMaster */,
 			);
 			productName = Example;
 			productReference = 8177C5772F91CB0F00ACEA3E /* Example.app */;
@@ -109,7 +112,7 @@
 			mainGroup = 8177C56E2F91CB0F00ACEA3E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				8113E3002FFBAFAA00A9B21F /* XCRemoteSwiftPackageReference "WWSummaryMaster" */,
+				8108BBEE2FFC91D60001B7D7 /* XCRemoteSwiftPackageReference "WWSummaryMaster" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8177C5782F91CB0F00ACEA3E /* Products */;
@@ -286,6 +289,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = idv.william.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,6 +322,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = idv.william.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,20 +356,24 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8113E3002FFBAFAA00A9B21F /* XCRemoteSwiftPackageReference "WWSummaryMaster" */ = {
+		8108BBEE2FFC91D60001B7D7 /* XCRemoteSwiftPackageReference "WWSummaryMaster" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWSummaryMaster";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 0.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8113E3012FFBAFAA00A9B21F /* WWSummaryMaster */ = {
+		8108BBEC2FFC90AF0001B7D7 /* WWSummaryMaster */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8113E3002FFBAFAA00A9B21F /* XCRemoteSwiftPackageReference "WWSummaryMaster" */;
+			productName = WWSummaryMaster;
+		};
+		8108BBEF2FFC91D60001B7D7 /* WWSummaryMaster */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8108BBEE2FFC91D60001B7D7 /* XCRemoteSwiftPackageReference "WWSummaryMaster" */;
 			productName = WWSummaryMaster;
 		};
 /* End XCSwiftPackageProductDependency section */

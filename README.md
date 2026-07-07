@@ -1,6 +1,12 @@
 # WWSummaryMaster
 
-- 智能摘要大師 (使用APPLE AI 功能，智能化取得文字摘要) 
+[![Swift-5.10](https://img.shields.io/badge/Swift-5.10-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![iOS-17.0](https://img.shields.io/badge/iOS-17.0-pink.svg?style=flat)](https://developer.apple.com/swift/)
+![TAG](https://img.shields.io/github/v/tag/William-Weng/WWSummaryMaster)
+[![Swift Package Manager-SUCCESS](https://img.shields.io/badge/Swift_Package_Manager-SUCCESS-blue.svg?style=flat)](https://developer.apple.com/swift/)
+[![LICENSE](https://img.shields.io/badge/LICENSE-MIT-yellow.svg?style=flat)](https://developer.apple.com/swift/)
+
+- 智能摘要大師 (使用APPLE AI 功能，智能化取得文字摘要)
 
 https://github.com/user-attachments/assets/86fc033f-3f7e-44ee-8a88-3d21e5f340fc
 

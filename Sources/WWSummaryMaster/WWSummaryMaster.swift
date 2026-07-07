@@ -1,5 +1,9 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+//
+//  WWSummaryMaster.swift
+//  WWSummaryMaster
+//
+//  Created by William.Weng on 2026/7/6.
+//
 
 #if canImport(FoundationModels)
 import FoundationModels
@@ -21,31 +25,14 @@ public extension WWSummaryMaster {
         guard !trimmed.isEmpty else { throw AgnetError.isTextEmpty }
         
         switch model.availability {
-        case .available: print("")
-        case .unavailable(let unavailableReason):
-            switch unavailableReason {
+        case .unavailable(let reason):
+            switch reason {
             case .appleIntelligenceNotEnabled: throw AgnetError.appleIntelligenceNotEnabled
             case .deviceNotEligible: throw AgnetError.deviceNotEligible
             case .modelNotReady: throw AgnetError.modelNotReady
-            default : throw AgnetError.unavailable(unavailableReason)
+            default : throw AgnetError.unavailable(reason)
             }
-        }
-                
-        let session = LanguageModelSession(
-            instructions: """
-            你是一個可靠的繁體中文摘要助手。
-            任務是忠於原文、去除冗詞、整理重點。
-            不要捏造原文沒有提到的資訊。
-            """
-        )
-        
-        switch mode {
-        case .plain:
-            let result = try await summarizePlain(text: trimmed, using: session, length: length)
-            return .plain(result)
-        case .structured:
-            let result = try await summarizeStructured(text: trimmed, using: session, length: length)
-            return .structured(result)
+        case .available: return try await summarizeText(trimmed, mode: mode, length: length)
         }
     }
 }
@@ -66,6 +53,25 @@ private extension WWSummaryMaster {
         原文：
         \(text)
         """
+    }
+    
+    func summarizeText(_ text: String, mode: Mode = .plain, length: Length = .medium) async throws -> WWSummaryMaster.Result {
+        
+        let session = LanguageModelSession(instructions: """
+            你是一個可靠的繁體中文摘要助手。
+            任務是忠於原文、去除冗詞、整理重點。
+            不要捏造原文沒有提到的資訊。
+            """
+        )
+        
+        switch mode {
+        case .plain:
+            let result = try await summarizePlain(text: text, using: session, length: length)
+            return .plain(result)
+        case .structured:
+            let result = try await summarizeStructured(text: text, using: session, length: length)
+            return .structured(result)
+        }
     }
     
     func summarizePlain(text: String, using session: LanguageModelSession, length: Length) async throws -> String {
