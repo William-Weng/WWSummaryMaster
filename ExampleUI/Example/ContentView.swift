@@ -45,7 +45,7 @@ struct ContentView: View {
                 do {
                     switch try await master.summarize(notes) {
                     case .plain(let plain): text = plain
-                    case .structured(let result): text = "\(result)"
+                    case .structured(let result): text = "\(result.keyPoints)"
                     }
                 } catch {
                     text = "\(error.localizedDescription)"

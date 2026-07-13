@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8108BBED2FFC90AF0001B7D7 /* WWSummaryMaster in Frameworks */ = {isa = PBXBuildFile; productRef = 8108BBEC2FFC90AF0001B7D7 /* WWSummaryMaster */; };
-		8108BBF02FFC91D60001B7D7 /* WWSummaryMaster in Frameworks */ = {isa = PBXBuildFile; productRef = 8108BBEF2FFC91D60001B7D7 /* WWSummaryMaster */; };
+		81A257443004B55D00EF0827 /* WWSummaryMaster in Frameworks */ = {isa = PBXBuildFile; productRef = 81A257433004B55D00EF0827 /* WWSummaryMaster */; };
+		81A257473004B59100EF0827 /* WWSummaryMaster in Frameworks */ = {isa = PBXBuildFile; productRef = 81A257463004B59100EF0827 /* WWSummaryMaster */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8108BBED2FFC90AF0001B7D7 /* WWSummaryMaster in Frameworks */,
-				8108BBF02FFC91D60001B7D7 /* WWSummaryMaster in Frameworks */,
+				81A257443004B55D00EF0827 /* WWSummaryMaster in Frameworks */,
+				81A257473004B59100EF0827 /* WWSummaryMaster in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +83,8 @@
 			name = Example;
 			packageProductDependencies = (
 				8108BBEC2FFC90AF0001B7D7 /* WWSummaryMaster */,
-				8108BBEF2FFC91D60001B7D7 /* WWSummaryMaster */,
+				81A257433004B55D00EF0827 /* WWSummaryMaster */,
+				81A257463004B59100EF0827 /* WWSummaryMaster */,
 			);
 			productName = Example;
 			productReference = 8177C5772F91CB0F00ACEA3E /* Example.app */;
@@ -112,7 +115,7 @@
 			mainGroup = 8177C56E2F91CB0F00ACEA3E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				8108BBEE2FFC91D60001B7D7 /* XCRemoteSwiftPackageReference "WWSummaryMaster" */,
+				81A257453004B59100EF0827 /* XCRemoteSwiftPackageReference "WWSummaryMaster" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8177C5782F91CB0F00ACEA3E /* Products */;
@@ -356,7 +359,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8108BBEE2FFC91D60001B7D7 /* XCRemoteSwiftPackageReference "WWSummaryMaster" */ = {
+		81A257453004B59100EF0827 /* XCRemoteSwiftPackageReference "WWSummaryMaster" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWSummaryMaster";
 			requirement = {
@@ -371,9 +374,13 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = WWSummaryMaster;
 		};
-		8108BBEF2FFC91D60001B7D7 /* WWSummaryMaster */ = {
+		81A257433004B55D00EF0827 /* WWSummaryMaster */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8108BBEE2FFC91D60001B7D7 /* XCRemoteSwiftPackageReference "WWSummaryMaster" */;
+			productName = WWSummaryMaster;
+		};
+		81A257463004B59100EF0827 /* WWSummaryMaster */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81A257453004B59100EF0827 /* XCRemoteSwiftPackageReference "WWSummaryMaster" */;
 			productName = WWSummaryMaster;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -9,8 +9,8 @@
 extension WWSummaryMaster {
         
     public struct RenderedStructuredResult {
-        let title: String
-        let summary: String
-        let keyPoints: [String]
+        public let title: String
+        public let summary: String
+        public let keyPoints: [String]
     }
 }

@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWSummaryMaster",
       "state" : {
-        "revision" : "8b3267581d99f3a65515689cb905609d56496de1",
-        "version" : "0.1.0"
+        "revision" : "7e32877d153e3a5bbcc7802e79009c6adccba303",
+        "version" : "0.1.1"
       }
     }
   ],
